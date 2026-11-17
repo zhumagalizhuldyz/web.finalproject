@@ -1,0 +1,20 @@
+
+/* Final project additions: accessible, persistent theme and account controls */
+body.dark {--bg-light:#101827;--card-bg:#1b2940;--text-dark:#f1f5fa;--text-muted:#c4cfde;--border-color:#43536b;--shadow:0 8px 22px rgba(0,0,0,.35)}
+body.dark .site-header,body.dark .site-footer{background:#071120}
+body.dark input,body.dark textarea,body.dark select{background:#22334c;color:#fff;border-color:#65738a}
+body.dark .register-container,body.dark .player-card,body.dark .player-info,body.dark .contact-container{background:var(--card-bg);color:var(--text-dark)}
+body.dark .page-title,body.dark .player-name{color:#e9c484}
+.final-actions{display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap;padding:.7rem;background:var(--card-bg);color:var(--text-dark);border-bottom:1px solid var(--border-color)}
+.final-actions a,.final-actions button,.final-btn{border:1px solid var(--rm-gold);border-radius:8px;background:var(--rm-navy);color:white;padding:.55rem .85rem;text-decoration:none;cursor:pointer;font:inherit;transition:transform .2s,background .2s,box-shadow .2s}
+.final-actions a:hover,.final-actions button:hover,.final-btn:hover{background:var(--rm-blue);transform:translateY(-2px);box-shadow:0 5px 15px #0003}
+.final-actions :focus-visible,.final-btn:focus-visible{outline:3px solid #e8b963;outline-offset:3px}
+.final-panel{max-width:620px;margin:2rem auto;padding:1.6rem;background:var(--card-bg);border:1px solid var(--border-color);border-radius:12px;box-shadow:var(--shadow);color:var(--text-dark)}
+.final-panel label{display:block;margin:1rem 0 .3rem;font-weight:600}
+.final-panel input{display:block;width:100%;padding:.7rem;border:1px solid var(--border-color);border-radius:6px;background:var(--bg-light);color:var(--text-dark)}
+.final-error{color:#b72828;font-weight:600;min-height:1.4em;margin:.6rem 0}
+body.dark .final-error{color:#ff9999}
+.final-muted{color:var(--text-muted)}
+.final-search{display:block;width:min(600px,100%);padding:.8rem;margin:1rem auto;border:1px solid var(--border-color);border-radius:8px;background:var(--card-bg);color:var(--text-dark)}
+@media(max-width:600px){.final-actions{gap:.3rem}.final-actions a,.final-actions button{font-size:.85rem;padding:.5rem}.final-panel{margin:1rem;padding:1rem}}
+@media(prefers-reduced-motion:reduce){.final-actions *,.final-btn{transition:none!important}}

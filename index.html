@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real Madrid - Official Fan Website</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        .home-hero {
+            min-height: 430px;
+            background:
+                linear-gradient(rgba(5, 15, 35, 0.65), rgba(5, 15, 35, 0.75)),
+                url("images/hero.png") center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .home-hero h1 {
+            font-size: clamp(32px, 5vw, 58px);
+            margin: 0 0 15px;
+            color: white;
+        }
+
+        .home-hero p {
+            font-size: 18px;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        .home-btn {
+            display: inline-block;
+            background: #d4af37;
+            color: #101c35;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 6px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .home-btn:hover {
+            background: #f0d36b;
+            transform: translateY(-3px);
+        }
+
+        .home-section {
+            padding: 45px 0;
+        }
+
+        .home-section h2 {
+            text-align: center;
+            color: #14213d;
+            margin-bottom: 12px;
+        }
+
+        .home-intro {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 30px;
+        }
+
+        .home-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .home-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            text-align: center;
+            padding-bottom: 22px;
+            transition: transform 0.3s;
+        }
+
+        .home-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .home-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: contain;
+            background: #f2f4f8;
+            padding: 15px;
+        }
+
+        .home-card h3 {
+            color: #14213d;
+            margin: 18px 10px 8px;
+        }
+
+        .home-card p {
+            padding: 0 18px;
+            margin-bottom: 18px;
+        }
+
+        .home-card a {
+            color: #14213d;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .home-card a:hover {
+            color: #b18a18;
+        }
+
+        .home-highlights {
+            background: #14213d;
+            color: white;
+            padding: 35px 20px;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .highlight-number {
+            color: #e6c45a;
+            font-size: 36px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .home-quote {
+            text-align: center;
+            padding: 35px 20px;
+            font-size: 20px;
+            font-style: italic;
+            color: #14213d;
+        }
+
+        @media (max-width: 600px) {
+            .home-hero {
+                min-height: 350px;
+            }
+
+            .home-hero p {
+                font-size: 16px;
+            }
+
+            .home-section {
+                padding: 30px 0;
+            }
+        }
+    </style>
+  <link rel="stylesheet" href="css/final.css">
+</head>
+
+<body>
+<div class="final-actions" aria-label="Account and theme controls"><button id="global-theme" type="button" aria-pressed="false">☾ Dark mode</button><a href="login.html">Log In</a><a href="register.html">Sign Up</a><a href="profile.html">Profile</a><button id="global-logout" type="button">Log Out</button></div>
+
+<div class="page-wrapper">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="logo-area">
+                <img src="images/crest.png" alt="Real Madrid Crest">
+                <span>Real Madrid FC</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="squad.html">Squad</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="fanzone.html">Fan Zone</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="home-hero">
+            <h1>Welcome to Real Madrid</h1>
+
+            <p>
+                Discover the history, legendary players, achievements
+                and latest information about one of football's most
+                successful clubs.
+            </p>
+
+            <a href="squad.html" class="home-btn">
+                Explore Our Squad
+            </a>
+        </section>
+
+
+        <div class="container">
+
+            <!-- ABOUT SECTION -->
+            <section class="home-section">
+                <h2>Welcome, Madridistas!</h2>
+
+                <p class="home-intro">
+                    Real Madrid Club de Fútbol is a professional football
+                    club based in Madrid, Spain. Founded in 1902, the club
+                    has built a remarkable legacy through its commitment
+                    to excellence, teamwork and success.
+                </p>
+
+                <div class="home-quote">
+                    "Hala Madrid y nada más!"
+                </div>
+            </section>
+
+
+            <!-- ACHIEVEMENTS -->
+            <section class="home-section">
+                <h2>Our Achievements</h2>
+
+                <p class="home-intro">
+                    A tradition of success on the national and
+                    international football stage.
+                </p>
+
+                <div class="home-highlights">
+
+                    <div>
+                        <span class="highlight-number">15</span>
+                        <span>Champions League Titles</span>
+                    </div>
+
+                    <div>
+                        <span class="highlight-number">36</span>
+                        <span>La Liga Titles</span>
+                    </div>
+
+                    <div>
+                        <span class="highlight-number">20</span>
+                        <span>Copa del Rey Titles</span>
+                    </div>
+
+                    <div>
+                        <span class="highlight-number">1902</span>
+                        <span>Year Founded</span>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- EXPLORE WEBSITE -->
+            <section class="home-section">
+                <h2>Explore Our Website</h2>
+
+                <p class="home-intro">
+                    Discover different sections of our Real Madrid
+                    fan website.
+                </p>
+
+                <div class="home-cards">
+
+                    <article class="home-card">
+                        <img
+                            src="images/player-Bellingham.webp"
+                            alt="Real Madrid player Jude Bellingham"
+                        >
+
+                        <h3>First Team Squad</h3>
+
+                        <p>
+                            Meet the players representing Real Madrid
+                            and discover their positions.
+                        </p>
+
+                        <a href="squad.html">View Squad &rarr;</a>
+                    </article>
+
+
+                    <article class="home-card">
+                        <img
+                            src="images/Di_stefano_argentina.jpg"
+                            alt="Real Madrid legend Alfredo Di Stéfano"
+                        >
+
+                        <h3>Club History</h3>
+
+                        <p>
+                            Explore the important moments, trophies
+                            and legends of our club.
+                        </p>
+
+                        <a href="history.html">Discover History &rarr;</a>
+                    </article>
+
+
+                    <article class="home-card">
+                        <img
+                            src="images/player-vini.webp"
+                            alt="Real Madrid player Vinícius Júnior"
+                        >
+
+                        <h3>Fan Zone</h3>
+
+                        <p>
+                            Enjoy interactive features, FAQs,
+                            player search and fan activities.
+                        </p>
+
+                        <a href="fanzone.html">Enter Fan Zone &rarr;</a>
+                    </article>
+
+
+                    <article class="home-card">
+                        <img
+                            src="images/crest.png"
+                            alt="Real Madrid club crest"
+                        >
+
+                        <h3>Tickets</h3>
+
+                        <p>
+                            Visit the tickets page to explore
+                            match information and ticket details.
+                        </p>
+
+                        <a href="tickets.html">View Tickets &rarr;</a>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <!-- JOIN THE COMMUNITY -->
+            <section class="home-section">
+                <h2>Join the Madridista Community</h2>
+
+                <p class="home-intro">
+                    Become part of our fan community. Register on our
+                    website and stay connected with the world of Real Madrid.
+                </p>
+
+                <div style="text-align:center; margin:25px 0;">
+                    <a href="register.html" class="home-btn">
+                        Register Now
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>
+                &copy; 2026 Real Madrid Fan Project.
+                Built for Educational Purposes.
+            </p>
+
+            <p>Assignment #6 - Completed Website</p>
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/final.js" defer></script>
+</body>
+</html>
